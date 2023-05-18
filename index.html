@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drag And Drop Scheduler</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  
-
-
-  <!-- js files  -->
-  <script src="./js/script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drag And Drop Scheduler</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <main id="scheduler">
+            <!-- main filter btn  -->
+            <div id="filter-btn">
+                <div class="shadow">
+                    <button>
+                        <p>all</p>
+                        <div class="count">
+                            25
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- photograper list  -->
+            <div id="schedule-header">
+                <div class="shadow">
+                    <!-- all photographer list -->
+                    <div class="photographer-list">
+                        <!-- button  -->
+                        <button>
+                            <p>unassigned</p>
+                            <div class="count">
+                                2
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- time row  -->
+            <div id="time-row"></div>
+            <!-- right schedule board  -->
+            <aside id="schedule-board"></aside>
+        </main>
+        <!-- js files  -->
+        <script src="./js/jquery-3.7.0.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
 </html>

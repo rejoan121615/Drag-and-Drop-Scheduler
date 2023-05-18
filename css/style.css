@@ -1,7 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#scheduler #schedule-header .shadow button .count, #scheduler #filter-btn .shadow button .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scheduler #schedule-header .shadow button, #scheduler #filter-btn .shadow button {
+  cursor: pointer;
+  border: none;
+  background-color: #484848;
+  text-transform: capitalize;
+  color: white;
+  height: 52px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+#scheduler #schedule-header .shadow button:hover, #scheduler #filter-btn .shadow button:hover {
+  background-color: #5295f6;
+}
+
+#scheduler #schedule-header, #scheduler #filter-btn {
+  padding: 7px;
+  width: 100%;
+  height: 100%;
+}
+#scheduler #schedule-header .shadow, #scheduler #filter-btn .shadow {
+  padding: 6px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #edede9;
+}
+#scheduler #schedule-header .shadow button, #scheduler #filter-btn .shadow button {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#scheduler #schedule-header .shadow button p, #scheduler #filter-btn .shadow button p {
+  text-align: left;
+  margin-left: 10px;
+}
+#scheduler #schedule-header .shadow button .count, #scheduler #filter-btn .shadow button .count {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 12px;
+  line-height: 14px;
+  color: black;
+  font-weight: 500;
+}
+#scheduler {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template: "filter-btn schedule-header" 90px "time-row schedule-board" 1fr/140px 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #e9e9e9;
+  column-gap: 3px;
+}
+#scheduler .time-column {
+  width: 100%;
+  height: 100%;
+}
+#scheduler #filter-btn, #scheduler #schedule-header, #scheduler #time-row {
+  background-color: white;
+}
+#scheduler #filter-btn .shadow p {
+  text-align: center !important;
+  margin-left: -15px !important;
+}
+#scheduler #filter-btn .count {
+  width: 19px !important;
+  height: 19px !important;
+}
+#scheduler #schedule-header {
+  padding: 7px 8px;
+}
+#scheduler #schedule-board {
+  background-color: #f9f9f9;
 }
 
 /*# sourceMappingURL=style.css.map */

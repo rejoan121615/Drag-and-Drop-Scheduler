@@ -1,5 +1,63 @@
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+//  modules
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import "./_structure";
+
+// structure template style
+
+#scheduler {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template:
+        "filter-btn schedule-header" 90px
+        "time-row schedule-board" 1fr / 140px 1fr;
+    width: 100%;
+    height: 100vh;
+    background-color: #e9e9e9;
+    column-gap: 3px;
+    // time style
+    .time-column {
+        width: 100%;
+        height: 100%;
+    }
+
+    #filter-btn , #schedule-header, #time-row {
+      background-color: white;
+    }
+
+    // filter btn
+    #filter-btn {
+        @extend %filter-row;
+        .shadow {
+          p {
+            text-align: center!important;
+            margin-left: -15px!important;
+          }
+        }
+        .count {
+          width: 19px!important;
+          height: 19px!important;
+        }
+
+    }
+
+
+    // photographer list 
+    #schedule-header {
+      @extend %filter-row;
+      padding: 7px 8px;
+    }
+
+
+    // schedule board 
+    #schedule-board {
+      background-color: #f9f9f9;
+    }
+}
