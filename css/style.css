@@ -91,8 +91,13 @@
 #scheduler #schedule-header {
   padding: 7px 8px;
 }
-#scheduler #schedule-header button {
-  height: 53px !important;
+#scheduler #schedule-header #photographer-list {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 120px repeat(auto-fill, 250px);
+}
+#scheduler #schedule-header #photographer-list button {
+  font-size: 14px;
 }
 #scheduler #schedule-board {
   background-color: #f9f9f9;

@@ -49,12 +49,20 @@
     }
 
 
-    // photographer list 
+    // schedule header 
     #schedule-header {
       @extend %filter-row;
       padding: 7px 8px;
       button {
-        height: 53px!important;
+      }
+      // photographer list 
+      #photographer-list {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 120px repeat(auto-fill, 250px);
+        button {
+          font-size: 14px;
+        }
       }
     }
 
