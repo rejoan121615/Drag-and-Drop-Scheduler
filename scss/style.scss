@@ -53,6 +53,9 @@
     #schedule-header {
       @extend %filter-row;
       padding: 7px 8px;
+      button {
+        height: 53px!important;
+      }
     }
 
 
