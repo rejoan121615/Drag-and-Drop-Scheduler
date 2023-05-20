@@ -67,7 +67,7 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template: "filter-btn schedule-header" 90px "time-row schedule-board" 1fr/140px 1fr;
+  grid-template: "filter-btn schedule-header" 90px "time-row schedule-board" 1600px/140px 1fr;
   width: 100%;
   height: 100vh;
   background-color: #e9e9e9;
@@ -93,12 +93,21 @@
 }
 #scheduler #schedule-header #photographer-list {
   height: 100%;
-  display: grid;
-  grid-template-columns: 120px repeat(auto-fill, 250px);
-  column-gap: 12px;
 }
 #scheduler #schedule-header #photographer-list button {
   font-size: 14px;
+}
+#scheduler #schedule-header #photographer-list .slick-slide {
+  margin-right: 20px;
+}
+#scheduler #schedule-header #photographer-list .slick-slide:last-child {
+  margin-right: 0px;
+}
+#scheduler #schedule-header #photographer-list .slides-wrap, #scheduler #schedule-header #photographer-list .slick-list, #scheduler #schedule-header #photographer-list .slick-track {
+  height: 100%;
+}
+#scheduler #schedule-header #photographer-list .slick-arrow {
+  width: 75px;
 }
 #scheduler #schedule-board {
   background-color: #f9f9f9;
