@@ -1,0 +1,106 @@
+{
+    "result": "OK",
+    "shootCalendar": {
+        "shootCalendarEventList": [
+            {
+                "bookingOrderShootStatusId": 0,
+                "bookingId": 346303,
+                "photographerId": 1,
+                "assignedDateTime": "2023-05-16T12:00:00",
+                "estimatedTime": 45,
+                "taskState": 1,
+                "streetAddress": "7412 Canterbury Street",
+                "customerName": null,
+                "overlayText": "this will have some info later, 7412 Canterbury Street",
+                "clickThruLink": null,
+                "orderedAerial": false,
+                "orderedVideo": false,
+                "orderedPhotos": false,
+                "orderedMatterport": false,
+                "orderedZillow3d": false,
+                "orderedLuxury": false,
+                "orderedVacation": false,
+                "orderedTwilight": false
+            },
+            {
+                "bookingOrderShootStatusId": 0,
+                "bookingId": 346309,
+                "photographerId": 1,
+                "assignedDateTime": "2023-05-15T11:30:00",
+                "estimatedTime": 45,
+                "taskState": 0,
+                "streetAddress": "Atest1",
+                "customerName": null,
+                "overlayText": "this will have some info later, Atest1",
+                "clickThruLink": null,
+                "orderedAerial": false,
+                "orderedVideo": false,
+                "orderedPhotos": false,
+                "orderedMatterport": false,
+                "orderedZillow3d": false,
+                "orderedLuxury": false,
+                "orderedVacation": false,
+                "orderedTwilight": false
+            }
+        ],
+        "shootCalendarPhotographerList": [
+            { "photographerId": 1, "name": "Vic DeVore", "shortName": "Vic" },
+            {
+                "photographerId": 2,
+                "name": "Bryan DeVore",
+                "shortName": "Bryan"
+            },
+            {
+                "photographerId": 3,
+                "name": "J Michael Martz",
+                "shortName": "JMichael"
+            },
+            {
+                "photographerId": 4,
+                "name": "Jaclyn Anderson",
+                "shortName": "Jaclyn"
+            },
+            { "photographerId": 5, "name": "Tara Homan", "shortName": "Tara" },
+            {
+                "photographerId": 6,
+                "name": "Donte Norwood",
+                "shortName": "Donte"
+            },
+            {
+                "photographerId": 7,
+                "name": "Daniel Wieselberg",
+                "shortName": "Daniel"
+            },
+            { "photographerId": 8, "name": "Clay Snell", "shortName": "Clay" },
+            {
+                "photographerId": 9,
+                "name": "Adam Johnson",
+                "shortName": "Adam"
+            },
+            { "photographerId": 10, "name": "John Ruz", "shortName": "John" },
+            { "photographerId": 11, "name": "Gary Hun", "shortName": "Gary" },
+            {
+                "photographerId": 12,
+                "name": "Wendy Dunne2",
+                "shortName": "Wendy"
+            },
+            {
+                "photographerId": 13,
+                "name": "Adam Aptakerf",
+                "shortName": "Adam A"
+            },
+            {
+                "photographerId": 14,
+                "name": "Fred Test",
+                "shortName": "Fred Test"
+            },
+            { "photographerId": 15, "name": "Tim Warren", "shortName": "Tim" },
+            {
+                "photographerId": 16,
+                "name": "Shalea Madorin",
+                "shortName": "Shalea M"
+            },
+            { "photographerId": 17, "name": "Test", "shortName": "Test" }
+        ]
+    }
+}
