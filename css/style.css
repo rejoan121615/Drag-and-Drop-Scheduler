@@ -6,13 +6,13 @@
   font-family: "Roboto", sans-serif;
 }
 
-#scheduler #schedule-header .shadow button .count, #scheduler #filter-btn .shadow button .count {
+#scheduler #schedule-header .slider-btn-list .btn-wrap, .card-btn .count {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#scheduler #schedule-header .shadow button, #scheduler #filter-btn .shadow button {
+.card-btn {
   cursor: pointer;
   border: none;
   background-color: #484848;
@@ -24,7 +24,7 @@
   font-size: 18px;
   line-height: 21px;
 }
-#scheduler #schedule-header .shadow button:hover, #scheduler #filter-btn .shadow button:hover {
+.card-btn:hover {
   background-color: #5295f6;
 }
 
@@ -41,16 +41,16 @@
   max-height: 72px;
   background-color: #edede9;
 }
-#scheduler #schedule-header .shadow button, #scheduler #filter-btn .shadow button {
+.card-btn {
   width: 100%;
   height: 100%;
   position: relative;
 }
-#scheduler #schedule-header .shadow button p, #scheduler #filter-btn .shadow button p {
+.card-btn p {
   text-align: left;
   margin-left: 10px;
 }
-#scheduler #schedule-header .shadow button .count, #scheduler #filter-btn .shadow button .count {
+.card-btn .count {
   position: absolute;
   right: 7px;
   top: 7px;
@@ -77,7 +77,9 @@
   width: 100%;
   height: 100%;
 }
-#scheduler #filter-btn, #scheduler #schedule-header, #scheduler #time-row {
+#scheduler #filter-btn,
+#scheduler #schedule-header,
+#scheduler #time-row {
   background-color: white;
 }
 #scheduler #filter-btn .shadow p {
@@ -91,6 +93,9 @@
 #scheduler #schedule-header {
   padding: 7px 8px;
 }
+#scheduler #schedule-header .shadow {
+  position: relative;
+}
 #scheduler #schedule-header #photographer-list {
   height: 100%;
 }
@@ -98,16 +103,56 @@
   font-size: 14px;
 }
 #scheduler #schedule-header #photographer-list .slick-slide {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 #scheduler #schedule-header #photographer-list .slick-slide:last-child {
   margin-right: 0px;
 }
-#scheduler #schedule-header #photographer-list .slides-wrap, #scheduler #schedule-header #photographer-list .slick-list, #scheduler #schedule-header #photographer-list .slick-track {
+#scheduler #schedule-header #photographer-list .slides-wrap,
+#scheduler #schedule-header #photographer-list .slick-list,
+#scheduler #schedule-header #photographer-list .slick-track {
   height: 100%;
 }
 #scheduler #schedule-header #photographer-list .slick-arrow {
   width: 75px;
+}
+#scheduler #schedule-header .slider-btn-list {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#scheduler #schedule-header .slider-btn-list .btn-wrap {
+  width: 140px;
+  height: 100%;
+  position: relative;
+  z-index: 50;
+  background: linear-gradient(270deg, rgba(217, 217, 217, 0) 1.67%, #edede9 40.91%);
+  justify-content: flex-start;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#scheduler #schedule-header .slider-btn-list button {
+  background-color: #0b5ed7;
+  width: 52px;
+  height: 52px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 30px;
+}
+#scheduler #schedule-header .slider-btn-list button:hover {
+  background-color: #0949a6;
+}
+#scheduler #schedule-header .slider-btn-list .next-btn-wrap {
+  justify-content: flex-end;
+  margin-left: 0;
+  margin-right: 10px;
+  background: linear-gradient(270deg, #edede9 40.91%, rgba(217, 217, 217, 0) 101.67%);
 }
 #scheduler #schedule-board {
   background-color: #f9f9f9;

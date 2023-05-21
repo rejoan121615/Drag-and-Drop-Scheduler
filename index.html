@@ -6,6 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Drag And Drop Scheduler</title>
         <link rel="stylesheet" href="./vendor/slick-slider/slick.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
@@ -13,7 +20,7 @@
             <!-- main filter btn  -->
             <div id="filter-btn">
                 <div class="shadow">
-                    <button>
+                    <button class="card-btn">
                         <p>all</p>
                         <div class="count">25</div>
                     </button>
@@ -21,34 +28,46 @@
             </div>
             <!-- photograper list  -->
             <div id="schedule-header">
-                <!-- photographer btn lists   -->
-                <div class="btn-wrap"></div>
+                <!-- shadow and photographer list  -->
                 <div class="shadow">
+                    <!-- photographer btn lists -->
+                    <div class="slider-btn-list">
+                        <div class="prev-btn-wrap btn-wrap">
+                            <button class="prev-btn">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                        </div>
+                        <div class="next-btn-wrap btn-wrap">
+                            <button class="next-btn">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
                     <!-- all photographer list -->
-                    <div id="photographer-list" style="width: 1600px">
+                    <div id="photographer-list" style="width: 1700px">
                         <!-- slider list  -->
                         <div class="slides-wrap">
-                            <button>
+                            <button class="card-btn">
                                 <p>Mohd Rejoan</p>
                                 <div class="count">2</div>
                             </button>
-                            <button>
+                            <button class="card-btn">
                                 <p>Mohd Rejoan</p>
                                 <div class="count">2</div>
                             </button>
-                            <button>
+                            <button class="card-btn">
                                 <p>Mohd Rejoan</p>
                                 <div class="count">2</div>
                             </button>
-                            <button>
+                            <button class="card-btn">
                                 <p>Mohd Rejoan</p>
                                 <div class="count">2</div>
                             </button>
-                            <button>
+                            <button class="card-btn">
                                 <p>Mohd Rejoan</p>
                                 <div class="count">2</div>
                             </button>
-                            <button>
+                            <button class="card-btn">
                                 <p>Mohd Rejoan</p>
                                 <div class="count">2</div>
                             </button>
@@ -62,6 +81,12 @@
             <aside id="schedule-board"></aside>
         </main>
         <!-- js files  -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+            integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <script src="./vendor/jquery/jquery-3.7.0.min.js"></script>
         <script src="./vendor/slick-slider/slick.min.js"></script>
         <script src="./js/script.js"></script>

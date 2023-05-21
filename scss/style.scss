@@ -28,64 +28,117 @@
         height: 100%;
     }
 
-    #filter-btn , #schedule-header, #time-row {
-      background-color: white;
+    #filter-btn,
+    #schedule-header,
+    #time-row {
+        background-color: white;
     }
 
     // filter btn
     #filter-btn {
         @extend %filter-row;
         .shadow {
-          p {
-            text-align: center!important;
-            margin-left: -15px!important;
-          }
+            p {
+                text-align: center !important;
+                margin-left: -15px !important;
+            }
         }
         .count {
-          width: 19px!important;
-          height: 19px!important;
+            width: 19px !important;
+            height: 19px !important;
         }
-
     }
 
-
-    // schedule header 
+    // schedule header
     #schedule-header {
-      @extend %filter-row;
-      padding: 7px 8px;
-      button {
-      }
-      // photographer list 
-      #photographer-list {
-        height: 100%;
-        // display: grid;
-        // grid-template-columns: 120px repeat(auto-fill, 250px);
-        // column-gap: 12px;
-        button {
-          font-size: 14px;
+        @extend %filter-row;
+        padding: 7px 8px;
+        .shadow {
+            position: relative;
         }
+        // photographer list
+        #photographer-list {
+            height: 100%;
+            // display: grid;
+            // grid-template-columns: 120px repeat(auto-fill, 250px);
+            // column-gap: 12px;
+            button {
+                font-size: 14px;
+            }
 
-        // slick slide 
-        .slick-slide {
-          margin-right: 20px;
-          &:last-child {
-            margin-right: 0px;
-          }
-        }
+            // slick slide
+            .slick-slide {
+                margin-right: 15px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
 
-        .slides-wrap, .slick-list, .slick-track {
-          height: 100%;
+            .slides-wrap,
+            .slick-list,
+            .slick-track {
+                height: 100%;
+            }
+            // slider arrow
+            .slick-arrow {
+                width: 75px;
+            }
         }
-        // slider arrow 
-        .slick-arrow {
-          width: 75px;
+        // nav btns
+        .slider-btn-list {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // button wrapper shadow
+            .btn-wrap {
+                width: 140px;
+                height: 100%;
+                position: relative;
+                z-index: 50;
+                background: linear-gradient(
+                    270deg,
+                    rgba(217, 217, 217, 0) 1.67%,
+                    #edede9 40.91%
+                );
+                @extend %center;
+                justify-content: flex-start;
+                margin-left: 10px;
+                border-radius: 10px;
+            }
+            button {
+                background-color: $c-active;
+                width: 52px;
+                height: 52px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                font-size: 30px;
+                &:hover {
+                    background-color: darken($color: $c-active, $amount: 10);
+                }
+                // border: none;
+            }
+            // btn wrapper
+            .next-btn-wrap {
+                justify-content: flex-end;
+                margin-left: 0;
+                margin-right: 10px;
+                background: linear-gradient(
+                    270deg,
+                    #edede9 40.91%,
+                    rgba(217, 217, 217, 0) 101.67%
+                );
+            }
         }
-      }
     }
 
-
-    // schedule board 
+    // schedule board
     #schedule-board {
-      background-color: #f9f9f9;
+        background-color: #f9f9f9;
     }
 }
