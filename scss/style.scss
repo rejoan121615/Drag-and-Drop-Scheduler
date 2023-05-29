@@ -53,6 +53,9 @@
     #schedule-header {
         @extend %filter-row;
         padding: 7px 8px;
+        background: #ffffff;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.25);
+        position: relative;
         .shadow {
             position: relative;
         }
@@ -137,7 +140,7 @@
         }
     }
 
-    // time row 
+    // time row
     #time-row {
         .schedule-grid {
             @extend %schedule-grid;
