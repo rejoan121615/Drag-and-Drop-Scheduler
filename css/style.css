@@ -6,7 +6,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-#scheduler #schedule-header .slider-btn-list .btn-wrap, #scheduler #time-row .schedule-grid .time-btn-wrap, .schedule-grid .time-btn-wrap, .card-btn .count {
+#scheduler #schedule-header .slider-btn-list .btn-wrap, #scheduler #time-row .schedule-grid .time-btn-wrap,
+.schedule-grid .time-btn-wrap, .card-btn .count {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,14 +64,25 @@
   color: black;
   font-weight: 500;
 }
-#scheduler #time-row .schedule-grid, .schedule-grid {
+#scheduler #time-row .schedule-grid,
+.schedule-grid {
   display: grid;
-  grid-template-rows: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(13, minmax(0, 1fr));
 }
-#scheduler #time-row .schedule-grid .time-btn-wrap, .schedule-grid .time-btn-wrap {
+#scheduler #time-row .schedule-grid > div,
+.schedule-grid > div {
+  border-bottom: 2px solid #e9e9e9;
+}
+#scheduler #time-row .schedule-grid > div:last-child,
+.schedule-grid > div:last-child {
+  border-bottom: none;
+}
+#scheduler #time-row .schedule-grid .time-btn-wrap,
+.schedule-grid .time-btn-wrap {
   flex: 1;
 }
-#scheduler #time-row .schedule-grid .time-btn-card, .schedule-grid .time-btn-card {
+#scheduler #time-row .schedule-grid .time-btn-card,
+.schedule-grid .time-btn-card {
   font-size: 15px;
   text-transform: uppercase;
   padding: 12px 14px;
@@ -111,6 +123,7 @@
   background: #ffffff;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.25);
   position: relative;
+  z-index: 10;
 }
 #scheduler #schedule-header .shadow {
   position: relative;
@@ -176,14 +189,16 @@
 #scheduler #time-row .schedule-grid {
   height: 100%;
 }
-#scheduler #time-row .schedule-grid .time-btn-wrap {
-  border-bottom: 2px solid #e9e9e9;
-}
-#scheduler #time-row .schedule-grid .time-btn-wrap:last-child {
-  border-bottom: none;
-}
 #scheduler #schedule-board {
   background-color: #f9f9f9;
+  position: relative;
+}
+#scheduler #schedule-board .schedule-grid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

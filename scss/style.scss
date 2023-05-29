@@ -56,6 +56,7 @@
         background: #ffffff;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.25);
         position: relative;
+        z-index: 10;
         .shadow {
             position: relative;
         }
@@ -146,17 +147,25 @@
             @extend %schedule-grid;
             height: 100%;
 
-            .time-btn-wrap {
-                border-bottom: 2px solid $border-color;
-                &:last-child {
-                    border-bottom: none;
-                }
-            }
+            // .time-btn-wrap {
+            //     border-bottom: 2px solid $border-color;
+            //     &:last-child {
+            //         border-bottom: none;
+            //     }
+            // }
         }
     }
 
     // schedule board
     #schedule-board {
         background-color: #f9f9f9;
+        position: relative;
+        .schedule-grid {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
     }
 }

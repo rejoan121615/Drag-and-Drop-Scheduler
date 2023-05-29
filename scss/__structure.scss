@@ -71,10 +71,16 @@ $c-active: #0b5ed7;
     }
 }
 
-%schedule-grid, .schedule-grid {
+%schedule-grid,
+.schedule-grid {
     display: grid;
-    grid-template-rows: repeat(12, minmax(0, 1fr));
-    ;
+    grid-template-rows: repeat(13, minmax(0, 1fr));
+    & > div {
+        border-bottom: 2px solid $border-color;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
     .time-btn-wrap {
         flex: 1;
         @extend %center;

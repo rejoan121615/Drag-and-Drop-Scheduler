@@ -50,4 +50,8 @@ $(document).ready(function () {
     photographerListSlider.on("afterChange", function (slick, currentState) {
         SliderBtnHandler();
     });
+
+
+    // generate schedule board background grid 
+    
 });
